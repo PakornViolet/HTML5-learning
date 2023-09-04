@@ -46,6 +46,27 @@
             <label for="num">ตัวเลขสักเลข</label>
             <input type="range" name="rangenum" value="1">
         </div>
+        <div>
+            <label for=".">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="มัธยมต้น">มัธยมต้น</option>
+                <option value="มัธยมปลาย">มัธยมปลาย</option>
+                <option value="ปริญญาตรี" selected>ปริญญาตรี</option>      <!-- selected ใช้เพื่อกำหนดให้เป็นค่าเริ่มต้น -->
+            </select>
+        </div>
+        <div>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+        </div>
+        <div>
+            <label for="gender">กำหนดเอง</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="like">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="fav">Coding
+            <input type="checkbox" name="fav">Reading
+        </div>
     </form>
 </body>
 </html>
