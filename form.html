@@ -10,17 +10,17 @@
     <form align="center">
         <div>
             <label for="firstname">ชื่อจริง</label>
-            <input type="text" name="fname" placeholder="ป้อนชื่อจริง (ก-ฮ)">
+            <input type="text" name="fname" placeholder="ป้อนชื่อจริง (ก-ฮ)" required>
             <label for="lastname">นามสกุล</label>
-            <input type="text" name="lname">
+            <input type="text" name="lname" required>
         </div>
         <div>
             <label for="email">อีเมล</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
         </div>
         <div>
             <label for="password">รหัสผ่าน</label>
-            <input type="password" name="pass">
+            <input type="password" name="pass" required>
         </div>
         <div>
             <label for="address">ที่อยู่</label>
@@ -48,7 +48,7 @@
         </div>
         <div>
             <label for=".">ระดับการศึกษา</label>
-            <select name="edu" id="">
+            <select name="edu" id="" required>
                 <option value="มัธยมต้น">มัธยมต้น</option>
                 <option value="มัธยมปลาย">มัธยมปลาย</option>
                 <option value="ปริญญาตรี" selected>ปริญญาตรี</option>      <!-- selected ใช้เพื่อกำหนดให้เป็นค่าเริ่มต้น -->
@@ -66,6 +66,17 @@
             <label for="like">สิ่งที่ชอบ</label>
             <input type="checkbox" name="fav">Coding
             <input type="checkbox" name="fav">Reading
+        </div>
+        <div>
+            <label for="file">แนบเอกสาร</label>
+            <input type="file" required>
+        </div>
+        <div>
+            <input type="submit" value="บันทึกข้อมูล ">
+            <button>แสดงข้อมูล</button>
+        </div>
+        <div>
+            <input type="reset" value="ล้างข้อมูล">
         </div>
     </form>
 </body>
